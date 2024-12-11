@@ -32,70 +32,93 @@ The **MultilabelStratifiedKFold** method solves this problem by performing the f
    - This is done by treating each label as a binary classification problem, where an instance is either a member (1) or not (0) of that label.
    - The **stratification** ensures that the proportion of positive instances (1s) and negative instances (0s) for each label is consistent across all folds.
 
-### Example: Mathematical Breakdown
 
-Consider a dataset with <code>N</code> samples and <code>L</code> labels (binary). We have a set of labels for each instance:
 
-<table>
-  <tr>
-    <th>Sample</th>
-    <th>Label 1</th>
-    <th>Label 2</th>
-    <th>Label 3</th>
-  </tr>
-  <tr>
-    <td>1</td>
-    <td>1</td>
-    <td>0</td>
-    <td>1</td>
-  </tr>
-  <tr>
-    <td>2</td>
-    <td>0</td>
-    <td>1</td>
-    <td>0</td>
-  </tr>
-  <tr>
-    <td>3</td>
-    <td>1</td>
-    <td>1</td>
-    <td>0</td>
-  </tr>
-  <tr>
-    <td>4</td>
-    <td>1</td>
-    <td>0</td>
-    <td>0</td>
-  </tr>
-  <tr>
-    <td>5</td>
-    <td>0</td>
-    <td>1</td>
-    <td>1</td>
-  </tr>
-  <tr>
-    <td>6</td>
-    <td>1</td>
-    <td>1</td>
-    <td>1</td>
-  </tr>
-</table>
+    <h2>Mathematical Breakdown</h2>
+    <p>Consider a dataset with <i>N</i> samples and <i>L</i> labels (binary). We have a set of labels for each instance:</p>
+    <p>
+        <i>y<sub>i</sub> = [y<sub>i1</sub>, y<sub>i2</sub>, ..., y<sub>iL</sub>]</i>
+        where <i>y<sub>il</sub> ∈ {0, 1}</i>
+    </p>
+    <p>Where <i>y<sub>il</sub> = 1</i> means instance <i>i</i> belongs to label <i>l</i>, and <i>y<sub>il</sub> = 0</i> means it does not.</p>
 
-Using **MultilabelStratifiedKFold** with <code>K = 3</code> folds, the stratification would ensure that for each label, the distribution of positive and negative instances is balanced across the 3 folds. This would result in folds like:
+    <h2>Goal:</h2>
+    <p>Divide the dataset into <i>K</i> folds such that for each label <i>l</i>, the number of positive instances (i.e., <i>y<sub>il</sub> = 1</i>) is approximately the same in each fold. Similarly, the number of negative instances (i.e., <i>y<sub>il</sub> = 0</i>) is also approximately balanced across folds.</p>
 
-- **Fold 1**: Samples 1, 2, 6 (balanced representation for each label)
-- **Fold 2**: Samples 3, 4, 5
-- **Fold 3**: Remaining samples
+    <h2>Stratification:</h2>
+    <ul>
+        <li>For each label <i>l</i>, treat it as a binary classification problem where the goal is to have a similar proportion of positive and negative instances in each fold.</li>
+        <li>The algorithm finds the instances where <i>y<sub>il</sub> = 1</i> and ensures they are evenly distributed across all folds. The same is done for instances where <i>y<sub>il</sub> = 0</i>.</li>
+        <li>This is typically achieved using a technique like group k-fold or a stratification method where the instances are grouped in such a way that each fold gets a fair share of positive and negative instances for each label.</li>
+    </ul>
 
-### Mathematical Concept
+    <h2>Example:</h2>
+    <p>Consider a dataset with 6 samples and 3 labels:</p>
 
-Mathematically, the idea is to partition the label space such that for each label <code>l</code>, the distribution of instances across folds respects the marginal distribution of the label in the overall dataset:
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Sample</th>
+                <th>Label 1</th>
+                <th>Label 2</th>
+                <th>Label 3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>1</td>
+                <td>1</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>0</td>
+                <td>1</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+            </tr>
+        </tbody>
+    </table>
 
-<p align="center">
-  <code>P(y<sub>il</sub> = 1) in each fold ≈ P(y<sub>il</sub> = 1) in the entire dataset</code>
-</p>
+    <p>Using <code>MultilabelStratifiedKFold</code> with <i>K = 3</i> folds, the stratification would ensure that for each label, the distribution of positive and negative instances is balanced across the 3 folds. This would result in folds like:</p>
 
-This means each fold maintains a similar proportion of positive and negative examples for every label.
+    <ul>
+        <li>Fold 1: Samples 1, 2, 6 (balanced representation for each label)</li>
+        <li>Fold 2: Samples 3, 4, 5</li>
+        <li>Fold 3: Remaining samples</li>
+    </ul>
+
+    <h2>Mathematical Concept:</h2>
+    <p>Mathematically, the idea is to partition the label space such that for each label <i>l</i>, the distribution of instances across folds respects the marginal distribution of the label in the overall dataset:</p>
+    <p>
+        <i>P(y<sub>il</sub> = 1) in each fold ≈ P(y<sub>il</sub> = 1) in the entire dataset</i>
+    </p>
+    <p>This means each fold maintains a similar proportion of positive and negative examples for every label.</p>
+
 
 ### Benefits of MultilabelStratifiedKFold
 
