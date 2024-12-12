@@ -48,7 +48,7 @@ import os
 import pandas as pd
 from iterstrat.ml_stratifiers import MultilabelStratifiedKFold
 
-def stratify_yolo_dataset(Fimg, Ftxt, k):
+def stratify_yolo_dataset(Fimg, Ftxt, k, output_dir):
     # Step 1: List image files
     Limg = [os.path.splitext(f)[0] for f in os.listdir(Fimg) if f.endswith('.jpg')]
     Limg = list(set(Limg))  # Remove duplicates
@@ -73,7 +73,7 @@ def stratify_yolo_dataset(Fimg, Ftxt, k):
                 Ldata.append([Fname + '.jpg', -1, None, None, None, None])
             else:
                 for line in lines:
-                    parts = line.strip().split()
+                    parts = line.strip().split()[: 5] # we dont want confidence
                     Ldata.append([Fname + '.jpg'] + list(map(float, parts)))
 
     # Convert to DataFrame
@@ -85,21 +85,44 @@ def stratify_yolo_dataset(Fimg, Ftxt, k):
     data = pd.concat([data, one_hot], axis=1)
     data['w'] *= 1000  # Scale width and height
     data['h'] *= 1000
+    
     new_df = data.drop(['class', 'x', 'y'], axis=1).groupby('filename').sum().reset_index()
-    new_df['count'] = new_df.iloc[:, 1:].sum(axis=1)
+    new_df['count'] = new_df.iloc[:, 3:].sum(axis=1) # count of #classes
+    
     new_df.loc[new_df['count'] == 0, 'count'] = 1  # Avoid division by zero
     new_df['avg_w'] = new_df['w'] / new_df['count']
     new_df['avg_h'] = new_df['h'] / new_df['count']
     new_df['avg_ratio'] = new_df['avg_h'] / new_df['avg_w']
     new_df = new_df.drop(['w', 'h'], axis=1)
+    new_df.avg_ratio.fillna(0, inplace=True)
+    X= new_df.filename
+    y= new_df.iloc[:, 1:]
+    
 
     # Step 5: Multi-label stratified splitting
     mskf = MultilabelStratifiedKFold(n_splits=k)
-    for train_idx, val_idx in mskf.split(new_df['filename'], new_df.iloc[:, 1:]):
+    for i, (train_idx, val_idx) in enumerate(mskf.split(X, y)):
         X_train = new_df.iloc[train_idx]
         X_val = new_df.iloc[val_idx]
-        print("Train:", X_train)
-        print("Validation:", X_val)
+        save_dir_name(
+                i, 
+                "train",
+                X_train.filename.values.tolist(),
+                output_dir,
+                Fimg,
+                Ftxt
+            )
+        save_dir_name(
+                i, 
+                "val",
+                X_val.filename.values.tolist(),
+                output_dir,
+                Fimg,
+                Ftxt
+            )
+        
+
+
 
 # Example usage
 Fimg = "/path/to/image/folder"
