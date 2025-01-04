@@ -22,4 +22,6 @@ By combining these mathematical tools, Deep SORT effectively tracks multiple obj
 
 For a visual explanation, you might find this video helpful:
 
-[How DeepSORT works?](https://www.youtube.com/watch?v=LbyqsoLJu5Q)
+
+[![How DeepSORT works?](https://img.youtube.com/vi/LbyqsoLJu5Q/0.jpg)](https://www.youtube.com/watch?v=LbyqsoLJu5Q)
+
