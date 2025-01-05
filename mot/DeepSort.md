@@ -37,3 +37,8 @@ For a visual explanation, you might find this video helpful:
 
 [![How DeepSORT works?](https://img.youtube.com/vi/LbyqsoLJu5Q/0.jpg)](https://www.youtube.com/watch?v=LbyqsoLJu5Q)
 
+
+## Kalman Filter
+
+![image](https://github.com/user-attachments/assets/43994678-9b93-4b85-a498-71774dae0d31)
+
