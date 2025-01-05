@@ -1,4 +1,16 @@
+# DeepSORT
+
 Imagine you're playing with a toy car on a track. You want to keep an eye on your car as it moves around, even if it goes behind obstacles or other toys. The Deep SORT algorithm helps computers do something similar: it watches and follows multiple moving objects, like cars or people, in videos, even when they disappear and reappear.
+
+
+## SORT
+
+![image](https://github.com/user-attachments/assets/4bb77431-145a-4d55-b685-d997ce329d2f)
+
+## DeepSORT
+![image](https://github.com/user-attachments/assets/ee30bc04-21c9-42f3-a177-28d086997838)
+
+**Measurement-to-Track Association (MTA)**: MTA is the process of determining the relation between the `measurement` and an `existing` track.
 
 **How Does Deep SORT Work?**
 
