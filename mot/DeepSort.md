@@ -22,6 +22,9 @@ Imagine you're playing with a toy car on a track. You want to keep an eye on you
 
 4. **Matching Predictions with Reality:** In the next video frame, the computer compares its predictions with what it actually sees. If an object appears where the computer expected, it confirms the object's identity. If not, it updates its prediction based on the new information.
 
+![image](https://github.com/user-attachments/assets/bf698d8a-b081-4e90-a99f-2a4d495caf0d)
+
+
 5. **Handling Disappearances:** If an object goes out of sight (like your toy car going behind a couch), the computer doesn't immediately forget about it. It waits for a while, using its memory of the object's appearance and movement to recognize it when it comes back into view.
 
 **Mathematical Intuition Behind Deep SORT**
@@ -41,4 +44,6 @@ For a visual explanation, you might find this video helpful:
 ## Kalman Filter
 
 ![image](https://github.com/user-attachments/assets/43994678-9b93-4b85-a498-71774dae0d31)
+
+
 
