@@ -12,19 +12,18 @@
 |                   | - Calculus: Gradients, Chain Rule, Partial Derivatives                                | :white_check_mark:      |
 |                   | - Probability: Bayes’ Theorem, Distributions, Expected Values                        | :white_check_mark:      |
 | **🌟 Python Basics**| - Python Basics: Variables, Loops, Functions, Classes  | :white_check_mark:      |
-| - Libraries: NumPy, Pandas, Matplotlib, Seaborn        | :x:      |
-| **🌟 Data Structures & Algorithms**                    |||
-| - Fundamental of Programming                           | :white_check_mark:      |
-| - Linked List                                          | :x:      |
-| - Linked List II                                       | :x:      |
-| - Stack                                                | :x:      |
-| - Queues                                               | :x:      |
-| - Trees_Generic                                        | :x:      |
-| - Binary Tree                                          | :x:      |
-| - Binary Search Tree                                   | :x:      |
-| - Hashmaps                                             | :x:      |
-| - Graphs                                               | :x:      |
-| - Dynamic Programming                                  | :x:      |
+|                   | - Libraries: NumPy, Pandas, Matplotlib, Seaborn        | :x:      |
+| **🌟 Data Structures & Algorithms**| - Fundamental of Programming                           | :white_check_mark:      |
+|                   | - Linked List                                          | :x:      |
+|                   | - Linked List II                                       | :x:      |
+|                   | - Stack                                                | :x:      |
+|                   | - Queues                                               | :x:      |
+|                   | - Trees_Generic                                        | :x:      |
+|                   | - Binary Tree                                          | :x:      |
+|                   | - Binary Search Tree                                   | :x:      |
+|                   | - Hashmaps                                             | :x:      |
+|                   | - Graphs                                               | :x:      |
+|                   | - Dynamic Programming                                  | :x:      |
 | **🌟 Web Frameworks** | - Flask Basics: Setting up APIs, Routing                                           | :white_check_mark:      |
 |                   | - Django Basics: Models, Views, Templates                                            | :white_check_mark:      |
 |                   | - Intro to FastAPI: Building Fast RESTful APIs                                        | :white_check_mark:      |
