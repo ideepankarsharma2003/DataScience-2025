@@ -82,7 +82,7 @@
 |                   | - Serving Models with Docker                                                         | :x:      |
 |                   | - Setting up CI/CD Pipelines for Deployment                                          | :x:      |
 | **⚙️ Scaling**     | - Deploying with Kubernetes                                                         | :x:      |
-|                   | - Cloud Platforms: AWS S3, Lambda, Google Cloud, Azure                              | :x:      |
+|                   | - **Cloud Platforms:** <br>&emsp;AWS S3<br>&emsp;AWS EC2<br> &emsp;AWS Lambda<br> &emsp;Google Cloud Run<br> &emsp;Azure                              |<br>:white_check_mark: <br>:white_check_mark:<br>:white_check_mark:<br>:white_check_mark:<br>:x:      |
 | **🛡️ Monitoring**   | - Model Monitoring with Prometheus, Grafana                                        | :x:      |
 |                   | - Analyzing Latency and Performance                                                 | :x:      |
 
