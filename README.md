@@ -54,7 +54,12 @@
 | **🧠 Deep Learning Frameworks** | - TensorFlow Basics: Graphs, Tensors, Training Loops                      | :x:      |
 |                   | - PyTorch Basics: Autograd, nn.Module, DataLoaders                                   | :x:      |
 |                   | - Keras: Building and Training Models                                                | :x:      |
-| **📚 Advanced Architectures** | - Convolutional Neural Networks (CNNs): Image Classification               | :white_check_mark:      |
+| **📚 Advanced Architectures** | - **Convolutional Neural Networks (CNNs):**                              | :white_check_mark:      |
+|                   | &emsp;Image Classification                                   | :white_check_mark:      |
+|                   | &emsp;Image Classification                                   | :white_check_mark:      |
+|                   | &emsp;Image Classification                                   | :white_check_mark:      |
+|                   | &emsp;Image Classification                                   | :white_check_mark:      |
+|                   | &emsp;Image Classification                                   | :white_check_mark:      |
 |                   | - Recurrent Neural Networks (RNNs): Time Series and NLP                              | :white_check_mark:      |
 |                   | - Transformers: Attention Mechanisms and BERT                                        | :white_check_mark:      |
 
@@ -87,6 +92,33 @@
 |                   | - Analyzing Latency and Performance                                                 | :x:      |
 
 ---
+
+## 📂 **Phase 6: Computer Vision Specific**
+| **Category**                      | **Task**                                          | **Status** |
+|-----------------------------------|--------------------------------------------------|------------|
+| **🖼️ Traditional Image Processing** | Edge Detection (Sobel, Canny)                    | :x:          |
+|                                   | Image Thresholding (Otsu’s, Adaptive)            | :x:          |
+|                                   | Histogram Equalization                           | :x:          |
+|                                   | Morphological Operations (Dilation, Erosion)    | :x:          |
+|                                   | Contour Detection                               | :x:          |
+|                                   | Optical Character Recognition (OCR - Tesseract) | :x:          |
+| **🔍 Feature-based Vision**       | Keypoint Detection (SIFT, ORB, FAST)            | :x:          |
+|                                   | Feature Matching (FLANN, BFMatcher)             | :x:          |
+|                                   | Object Tracking (KLT, Optical Flow)             | :x:          |
+|                                   | Image Stitching (Panorama)                      | :x:          |
+| **📚 Machine Learning Methods**   | Traditional Classifiers (SVM, Random Forest)    | :x:          |
+|                                   | HOG + SVM for Object Detection                  | :x:          |
+| **🤖 Deep Learning Architectures** | **Convolutional Neural Networks (CNNs):**       | :x:          |
+|                                   | &emsp;Image Classification                      | :x:          |
+|                                   | &emsp;Object Detection (Faster R-CNN, YOLO)     | :x:          |
+|                                   | &emsp;Semantic Segmentation (U-Net, DeepLab)    | :x:          |
+|                                   | &emsp;Instance Segmentation (Mask R-CNN)        | :x:          |
+|                                   | &emsp;Face Recognition (Facenet, ArcFace)      | :x:          |
+| **🧠 Advanced Vision Tasks**      | Self-Supervised Learning (SimCLR, MoCo)         | :x:          |
+|                                   | GANs for Image Generation (StyleGAN, CycleGAN) | :x:          |
+|                                   | Vision Transformers (ViTs, Swin Transformer)   | :x:          |
+|                                   | Multi-Modal Learning (CLIP, DALL·E)             | :x:          |
+
 
 
 
