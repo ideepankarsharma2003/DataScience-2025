@@ -55,11 +55,9 @@
 |                   | - PyTorch Basics: Autograd, nn.Module, DataLoaders                                   | :x:      |
 |                   | - Keras: Building and Training Models                                                | :x:      |
 | **📚 Advanced Architectures** | - **Convolutional Neural Networks (CNNs):**                              | :white_check_mark:      |
-|                   | &emsp;Image Classification                                   | :white_check_mark:      |
-|                   | &emsp;Image Classification                                   | :white_check_mark:      |
-|                   | &emsp;Image Classification                                   | :white_check_mark:      |
-|                   | &emsp;Image Classification                                   | :white_check_mark:      |
-|                   | &emsp;Image Classification                                   | :white_check_mark:      |
+|                   | &emsp;Image Classification                                                             | :white_check_mark:      |
+|                   | &emsp;Object Detection                                                                | :white_check_mark:      |
+|                   | &emsp;Person ReID                                                                     | :white_check_mark:      |
 |                   | - Recurrent Neural Networks (RNNs): Time Series and NLP                              | :white_check_mark:      |
 |                   | - Transformers: Attention Mechanisms and BERT                                        | :white_check_mark:      |
 
