@@ -114,7 +114,7 @@
 |                                   | &emsp;Face Recognition (Facenet, ArcFace)      | :x:          |
 | **🧠 Advanced Vision Tasks**      | Self-Supervised Learning (SimCLR, MoCo)         | :x:          |
 |                                   | GANs for Image Generation (StyleGAN, CycleGAN) | :x:          |
-|                                   | Vision Transformers (ViTs, Swin Transformer)   | :x:          |
+|                                   | Vision Transformers (ViTs, Swin Transformer)   | ✅          |
 |                                   | Multi-Modal Learning (CLIP, DALL·E)             | :x:          |
 
 
