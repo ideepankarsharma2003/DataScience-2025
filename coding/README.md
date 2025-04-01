@@ -1,4 +1,4 @@
-# 🚀 **Coding Essentials **  
+# 🚀  **Coding Essentials**  
 
 ---  
 
