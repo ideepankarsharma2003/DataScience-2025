@@ -1,55 +1,51 @@
 # 🚀  **Coding Essentials**  
 
----  
-
-## 🎯 **Phase 1: Foundations**  
-📌 **Goal:** Learn the basics of programming, problem-solving, and version control.  
-
-| 🔥 Stream         | ✅ Task | 📌 Status |
-|------------------|-----------------------------|--------|
-| 🎯 Programming Basics | Learn **Python** / **C++** / **Java** | ✅ |
-| 🏗 Data Structures | Understand **Arrays & Strings** | ✅ |
-| ⚡ Algorithms | Learn **Sorting & Searching** | ✅ |
-| 🧩 Problem Solving | Solve **50 basic coding problems** | ✅ |
-| 🛠 Version Control | Learn **Git & GitHub basics** | ❌ |
 
 ---
 
-## 🔥 **Phase 2: Intermediate Concepts**  
-📌 **Goal:** Dive into advanced data structures, recursion, and system design.  
+## 🎯 **Phase 1: Foundations of DSA**  
+📌 **Goal:** Build a strong foundation in complexity analysis, recursion, and basic data structures.  
 
-| 🔥 Stream         | ✅ Task | 📌 Status |
+| 🔥 Stream         | ✅ Topic | 📌 Status |
 |------------------|-----------------------------|--------|
-| 🏗 Data Structures | Learn **Linked Lists, Stacks, Queues** | ❌ |
-| ⚡ Algorithms | Master **Recursion & Dynamic Programming** | ❌ |
-| 🧩 Problem Solving | Solve **100 Easy LeetCode Problems** | ❌ |
-| 🏛 System Design | Understand **OOP & Design Patterns** | ❌ |
-| 🗄 Databases | Learn **SQL & NoSQL Basics** | ❌ |
+| 📊 Complexity Analysis | ⬜ Time Complexity (Big-O, Big-Theta, Big-Omega) <br> ⬜ Space Complexity | ✔️ |
+| 🔁 Recursion & Divide and Conquer | ⬜ Base Case & Recursive Relations <br> ⬜ Iterative vs Recursive Approaches <br> ⬜ Divide and Conquer | ✔️ |
+| 🗂 Arrays | ⬜ Declaration, Initialization, Traversal <br> ⬜ Insertion, Deletion, Searching <br> ⬜ Prefix Sum, Sliding Window, Two-Pointer <br> ⬜ Kadane's Algorithm, Subarray Sums | ❌ |
+| 🔤 Strings | ⬜ Character Arrays, String Manipulations <br> ⬜ KMP, Rabin-Karp, Z-Algorithm <br> ⬜ Palindromes, Anagrams, Pattern Matching <br> ⬜ Trie (Prefix Tree) | ❌ |
 
 ---
 
-## 🚀 **Phase 3: Advanced Topics**  
-📌 **Goal:** Strengthen problem-solving and understand system scalability.  
+## 🔥 **Phase 2: Intermediate DSA Concepts**  
+📌 **Goal:** Master linked lists, stacks, queues, and hashing.  
 
-| 🔥 Stream         | ✅ Task | 📌 Status |
+| 🔥 Stream         | ✅ Topic | 📌 Status |
 |------------------|-----------------------------|--------|
-| 🌳 Data Structures | Master **Trees & Graphs** | ❌ |
-| 🔢 Algorithms | Learn **Greedy, Backtracking, Bit Manipulation** | ❌ |
-| 🧩 Problem Solving | Solve **50 Medium/Hard LeetCode problems** | ❌ |
-| 🏛 System Design | Learn **Microservices & Scalable Architectures** | ❌ |
-| ⚡ Concurrency | Master **Multithreading & Parallel Computing** | ❌ |
+| 🔗 Linked Lists | ⬜ Singly, Doubly, Circular <br> ⬜ Creation, Insertion, Deletion, Traversal <br> ⬜ Reversing, Floyd’s Cycle Detection, Merging | ❌ |
+| 🏗 Stacks & Queues | ⬜ Stack Operations: Push, Pop, Peek <br> ⬜ Balanced Parentheses, Next Greater Element <br> ⬜ Circular Queue, Deque <br> ⬜ BFS, Sliding Window Maximum | ❌ |
+| 🎭 Hashing | ⬜ Hash Tables and Hash Functions <br> ⬜ Collision Handling: Chaining, Open Addressing <br> ⬜ Frequency Counts, Subarray Sums, Duplicates | ❌ |
 
 ---
 
-## 🎯 **Phase 4: Expert & Real-World Applications**  
-📌 **Goal:** Become a well-rounded developer and apply skills in real projects.  
+## 🚀 **Phase 3: Advanced DSA Topics**  
+📌 **Goal:** Gain proficiency in trees, graphs, and dynamic programming.  
 
-| 🔥 Stream         | ✅ Task | 📌 Status |
+| 🔥 Stream         | ✅ Topic | 📌 Status |
 |------------------|-----------------------------|--------|
-| ⚔ Competitive Coding | Participate in **Codeforces / CodeChef** | ❌ |
-| 🧠 Machine Learning | Learn **Basic ML Concepts** | ❌ |
-| 🏗 Web Development | Build a **Full-Stack Project** | ❌ |
-| 📦 DevOps | Learn **Docker & Kubernetes** | ❌ |
-| 🌍 Open Source | Contribute to **Open Source Projects** | ❌ |
+| 🌳 Trees | ⬜ Binary Tree, Binary Search Tree (BST) <br> ⬜ Inorder, Preorder, Postorder, Level Order <br> ⬜ AVL, Red-Black, Segment Trees <br> ⬜ Lowest Common Ancestor, Diameter, Path Sums | ❌ |
+| 📈 Graphs | ⬜ Adjacency Matrix, Adjacency List <br> ⬜ BFS, DFS <br> ⬜ Dijkstra’s, Bellman-Ford, Kruskal’s, Prim’s <br> ⬜ Cycle Detection, Connected Components, Bipartite Graphs | ❌ |
+| 🔢 Dynamic Programming | ⬜ Overlapping Subproblems, Optimal Substructure <br> ⬜ Fibonacci, Knapsack, Climbing Stairs <br> ⬜ Matrix Chain Multiplication, LIS, DP on Trees | ❌ |
 
 ---
+
+## 🎯 **Phase 4: Expert-Level DSA & Optimization**  
+📌 **Goal:** Tackle advanced algorithms and competitive programming challenges.  
+
+| 🔥 Stream         | ✅ Topic | 📌 Status |
+|------------------|-----------------------------|--------|
+| ⚡ Greedy Algorithms | ⬜ Greedy Approach for Optimization <br> ⬜ Activity Selection, Fractional Knapsack, Huffman Encoding | ❌ |
+| 🎭 Backtracking | ⬜ Exploring All Possibilities <br> ⬜ N-Queens, Sudoku Solver, Permutations | ❌ |
+| 🔍 Sorting & Searching | ⬜ Bubble, Merge, Quick, Heap Sort <br> ⬜ Binary Search, Lower/Upper Bounds <br> ⬜ K-th Smallest/Largest Element | ❌ |
+| 🏗 Advanced Topics | ⬜ Segment Trees, Fenwick Trees <br> ⬜ Disjoint Set Union (DSU) <br> ⬜ Topological Sorting, Floyd-Warshall, Tarjan’s Algorithm <br> ⬜ Tries, Suffix Arrays | ❌ |
+
+---
+
