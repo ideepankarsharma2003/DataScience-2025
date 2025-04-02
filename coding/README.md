@@ -9,7 +9,7 @@
 | 🔥 Stream         | ✅ Topic | 📌 Status |
 |------------------|-----------------------------|--------|
 | 📊 Complexity Analysis | ☑️ Time Complexity (Big-O, Big-Theta, Big-Omega) <br> ☑️ Space Complexity | ✅ |
-| 🔁 Recursion & Divide and Conquer | ⬜ Base Case & Recursive Relations <br> ⬜ Iterative vs Recursive Approaches <br> ⬜ Divide and Conquer | ✅ |
+| 🔁 Recursion & Divide and Conquer | ☑️ Base Case & Recursive Relations <br> ⬜ Iterative vs Recursive Approaches <br> ⬜ Divide and Conquer | ✅ |
 | 🗂 Arrays | ☑️ Declaration, Initialization, Traversal <br> ☑️ Insertion, Deletion, Searching <br> ⬜ Prefix Sum, Sliding Window, Two-Pointer <br> ⬜ Kadane's Algorithm, Subarray Sums | ❌ |
 | 🔤 Strings | ⬜ Character Arrays, String Manipulations <br> ⬜ KMP, Rabin-Karp, Z-Algorithm <br> ⬜ Palindromes, Anagrams, Pattern Matching <br> ⬜ Trie (Prefix Tree) | ❌ |
 
