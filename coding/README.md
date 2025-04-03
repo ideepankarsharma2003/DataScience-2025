@@ -6,6 +6,10 @@
 ## 🎯 **Phase 1: Foundations of DSA**  
 📌 **Goal:** Build a strong foundation in complexity analysis, recursion, and basic data structures.  
 
+repo: 
+- [**Python-DSA**](https://github.com/ideepankarsharma2003/Python-DSA.git)
+- [**SD1**](https://github.com/ideepankarsharma2003/SD1-coding.git)
+
 | 🔥 Stream         | ✅ Topic | 📌 Status |
 |------------------|-----------------------------|--------|
 | 📊 Complexity Analysis | ☑️ Time Complexity (Big-O, Big-Theta, Big-Omega) <br> ☑️ Space Complexity | ✅ |
