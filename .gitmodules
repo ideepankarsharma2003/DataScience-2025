@@ -1,0 +1,6 @@
+[submodule "coding/SD1-coding"]
+	path = coding/SD1-coding
+	url = https://github.com/ideepankarsharma2003/SD1-coding.git
+[submodule "coding/Python-DSA"]
+	path = coding/Python-DSA
+	url = https://github.com/ideepankarsharma2003/Python-DSA.git
