@@ -1,5 +1,7 @@
 # 🚀 Comprehensive Roadmap for ML/DL and Deployment -2025
 
+https://docs.google.com/document/d/1B18qN4a4HEYj8O44PjiQYufV2hFSSS_y_gGp3wVs_lI/edit?tab=t.0
+
 ---
 
 ## 📂 **Phase 1: Core Foundations**
