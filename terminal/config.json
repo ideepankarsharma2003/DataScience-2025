@@ -71,7 +71,19 @@
             "source": "cli",
             "mapped_branches": {
               "feat/*": "🚀 ",
-              "bug/*": "🐛 "
+              "feature/*": "🚀 ",
+              "bug/*": "🐛 ",
+              "fix/*": "🛠️ ",
+              "hotfix/*": "🚑 ",
+              "improv/*": "✨ ",
+              "refactor/*": "♻️ ",
+              "perf/*": "⚡ ",
+              "docs/*": "📝 ",
+              "test/*": "🧪 ",
+              "chore/*": "🧹 ",
+              "ci/*": "🤖 ",
+              "spike/*": "🔬 ",
+              "release/*": "📦 "
             }
           }
         },
@@ -110,7 +122,6 @@
       ],
       "type": "prompt"
     },
-    
     {
       "alignment": "right",
       "newline": false,
@@ -126,13 +137,13 @@
           "fetch_virtual_env": true,
           "fetch_version": true,
           "display_default": true,
-          "default_venv_names": ["venv"],  
+          "default_venv_names": [
+            "venv"
+          ],
           "properties": {
             "prefix": " \uE235 "
           }
         }
-        
-        
       ],
       "type": "prompt"
     },
@@ -151,17 +162,13 @@
     {
       "alignment": "right",
       "newline": false,
-      "segments": [
-        
-      ],
+      "segments": [],
       "type": "prompt"
     },
-    
     {
       "alignment": "left",
       "newline": true,
       "segments": [
-
         {
           "foreground": "#f1184c",
           "style": "plain",
@@ -171,7 +178,6 @@
       ],
       "type": "prompt"
     }
-    
   ],
   "version": 3
 }
